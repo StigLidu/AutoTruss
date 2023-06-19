@@ -1,0 +1,7 @@
+**/__pycache__
+*.pt
+*.th
+/saved_models
+/IJCAI_data
+/results_3d
+/PostResults

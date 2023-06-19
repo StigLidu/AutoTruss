@@ -1,0 +1,47 @@
+base:
+  maxp: 7
+  UCT_maxiter: 50000
+  UCT_extra_iter_for_point_pos: 50000
+  env_dims: 2
+  env_mode: Area
+  coordinate_range: 
+    - - 0.0
+      - 18.288
+    - - 0.0
+      - 9.144
+  coordinate_delta_range: 
+    - - -0.5715
+      - 0.5715
+    - - -0.5715
+      - 0.5715
+  area_range: 
+    - 0.00006452
+    - 0.0225806
+  len_range: 
+    - 0.3
+    - 18.2
+  useAlist: False
+  input_path: input/input_without_buckle_case2.txt
+  ratio_ring: 0.0
+  fixed_points: 6
+
+  E: 6.895e+10 
+  pho: 2.76799e+3
+  sigma_T: 172.37e+6
+  sigma_C: 172.37e+6
+  dislimit: 0.0508
+  CONSTRAINT_BUCKLE: 0
+  CONSTRAINT_SELF_WEIGHT: 0
+  CONSTRAINT_SLENDERNESS: 0
+
+  reward_lambda: 4.0e+7
+  only_position: False
+  epoch: 20
+  
+  save_path: ./results_3d/without_buckle_case2/
+  input_path_2: ./PostResults/without_buckle_case2/
+  save_model_path: ./saved_models/without_buckle_case2/
+  MASS_OUTPUT_ALL_THRESHOLD: 4000
+  OUTPUT_ALL_THRESHOLD: 0
+
+  bad_attempt_limit: 5

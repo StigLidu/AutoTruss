@@ -1,0 +1,46 @@
+base:
+  maxp: 6
+  UCT_maxiter: 50000
+  UCT_extra_iter_for_point_pos: 50000
+  env_dims: 2
+  env_mode: Area
+  coordinate_range: 
+    - - 0.0
+      - 10.16
+    - - 0.0
+      - 2.54
+  coordinate_delta_range: 
+    - - -0.5715
+      - 0.5715
+    - - -0.5715
+      - 0.5715
+  area_range: 
+    - 0.00006452
+    - 0.0225806
+  len_range: 
+    - 0.5
+    - 10
+  useAlist: False
+  input_path: input/input-17bar-case.txt
+  ratio_ring: 0.0
+  fixed_points: 3
+
+  E: 2.0685e+11
+  pho: 7.4182145e+3
+  sigma_T: 334.83e+6
+  sigma_C: 334.83e+6
+  dislimit: 0.0508
+  CONSTRAINT_BUCKLE: 1
+  CONSTRAINT_SELF_WEIGHT: 0
+  CONSTRAINT_SLENDERNESS: 0
+
+  reward_lambda: 4.0e+7
+  only_position: False
+  
+  save_path: ./results_3d/17_bar_case/
+  input_path_2: ./PostResults/17_bar_case/
+  save_model_path: ./saved_models/17_bar_case/
+  MASS_OUTPUT_ALL_THRESHOLD: 4000
+  OUTPUT_ALL_THRESHOLD: 0
+
+  epoch: 20

@@ -1,0 +1,24 @@
+base:
+  maxp: 7
+  UCT_maxiter: 20000
+  UCT_extra_iter_for_point_pos: 20000
+  greedy_upd: True
+  
+  CONSTRAINT_CROSS_EDGE: 1
+  CONSTRAINT_BUCKLE: 0
+
+  E: 1.93e+11
+  pho: 8.0e+3
+  sigma_T: 123.0e+6
+  sigma_C: 123.0e+6
+  slenderness_ratio_c: 180.0
+  slenderness_ratio_t: 220.0
+  dislimit: 0.002
+  epoch: 20
+
+  save_path: ./results_3d/kr_sundial/
+  input_path_2: ./PostResults/kr_sundial/
+  MASS_OUTPUT_ALL_THRESHOLD: 300
+  OUTPUT_ALL_THRESHOLD: 0
+
+#  only_position: False #TODO: added
